@@ -9,5 +9,5 @@ Set-Location $build_folder
 # Get-Location
 # Write-Host $dir
 cmake -G Ninja $dir
-cmake --build . --config Debug
+cmake --build . --config $Config
 Set-Location $dir

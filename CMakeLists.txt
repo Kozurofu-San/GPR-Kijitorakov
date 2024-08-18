@@ -12,6 +12,8 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS ON)
 
+set(DEPENDENCIES_FOLDER dependencies)
+
 
 # Define the build type
 if(NOT CMAKE_BUILD_TYPE)
@@ -66,3 +68,31 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 
     # Add user defined libraries
 )
+
+include(FetchContent)
+
+# FetchContent_Populate(
+#   googletest
+#   GIT_REPOSITORY https://github.com/google/googletest.git
+#   GIT_TAG        release-1.10.0
+#     SOURCE_DIR ${CMAKE_SOURCE_DIR}/example1
+# )
+
+# FetchContent_Declare(
+#   lvgl
+#   GIT_REPOSITORY https://github.com/lvgl/lvgl.git
+#   GIT_TAG        v9.1.0
+#   GIT_PROGRESS TRUE
+#   SOURCE_DIR ${CMAKE_SOURCE_DIR}/${DEPENDENCIES_FOLDER}/lvgl
+# )
+
+FetchContent_Declare(
+  freertos
+  GIT_REPOSITORY https://github.com/FreeRTOS/FreeRTOS.git
+  GIT_TAG        202212.01
+  GIT_SUBMODULES_RECURSE TRUE
+  GIT_PROGRESS TRUE
+  SOURCE_DIR ${CMAKE_SOURCE_DIR}/${DEPENDENCIES_FOLDER}/freertos
+)
+
+FetchContent_MakeAvailable(freertos)

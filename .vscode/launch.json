@@ -4,67 +4,6 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
-        {
-            "name": "st-link",
-            "cwd": "${workspaceRoot}",
-            "executable": "./build-debug/src/stw-dpu.elf",
-            "request": "launch",
-            "type": "cortex-debug",
-            "servertype": "openocd",
-            "device": "STM32F777NI",
-            "svdFile": "${workspaceRoot}/cross/STM32F777.svd",
-            "configFiles": [
-                "interface\\stlink.cfg",
-                "target\\stm32f7x.cfg"
-            ],
-            "openOCDLaunchCommands": [
-                "adapter speed 5000",
-                "adapter serial 066EFF485277504867212220"
-                // "adapter serial 066EFF485277504867235145"
-            ],
-            "runToEntryPoint": "main",
-            "showDevDebugOutput": "raw",
-        },
-        {
-            "name": "st-link remote",
-            "cwd": "${workspaceRoot}",
-            "executable": "./build-debug/src/stw-dpu.elf",
-            "request": "launch",
-            "type": "cortex-debug",
-            "servertype": "external",
-            "gdbTarget": "${config:mcu_ipv4}:3333",
-            "device": "STM32F777NI",
-            "svdFile": "${workspaceRoot}/cross/STM32F777.svd",
-            "configFiles": [
-                "interface\\stlink.cfg",
-                "target\\stm32f7x.cfg"
-            ],
-            "serialNumber": "490053000300004A4735544E0",        //Set ST-Link ID if you use multiple at the same time
-            "openOCDLaunchCommands": [
-                "adapter speed 5000",
-                "adapter serial 066EFF485277504867212220"
-            ],           
-            "swoConfig": {
-                "enabled": true,
-                "cpuFrequency": 160000000,
-                "swoFrequency":   2000000,
-                "source": "probe",
-                "decoders": [
-                    { 
-                        "type": "console",
-                        "label": "ITM",
-                        "showOnStartup": true,
-                        "port": 0,
-                        "encoding": "ascii"
-                    }
-                ]
-            },
-            "runToEntryPoint": "main",
-            "showDevDebugOutput": "none",
-            "preLaunchTask": "Start OpenOCD GDB server",
-            "postDebugTask": "Stop OpenOCD GDB server"
-        },
         {
             "name": "j-link",
             "cwd": "${workspaceRoot}",
