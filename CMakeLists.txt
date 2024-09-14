@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.28)
 
 #
 # This file is generated only once,
@@ -8,9 +8,11 @@ cmake_minimum_required(VERSION 3.22)
 #
 
 # Setup compiler settings
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS ON)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
 set(DEPENDENCIES_FOLDER dependencies)
 
@@ -78,21 +80,22 @@ include(FetchContent)
 #     SOURCE_DIR ${CMAKE_SOURCE_DIR}/example1
 # )
 
-# FetchContent_Declare(
-#   lvgl
-#   GIT_REPOSITORY https://github.com/lvgl/lvgl.git
-#   GIT_TAG        v9.1.0
-#   GIT_PROGRESS TRUE
-#   SOURCE_DIR ${CMAKE_SOURCE_DIR}/${DEPENDENCIES_FOLDER}/lvgl
-# )
+FetchContent_Populate(
+  lvgl
+  GIT_REPOSITORY https://github.com/lvgl/lvgl.git
+  GIT_TAG        v9.2.0
+  GIT_PROGRESS TRUE
+  SOURCE_DIR ${CMAKE_SOURCE_DIR}/${DEPENDENCIES_FOLDER}/lvgl
+)
 
-FetchContent_Declare(
+FetchContent_Populate(
   freertos
-  GIT_REPOSITORY https://github.com/FreeRTOS/FreeRTOS.git
-  GIT_TAG        202212.01
-  GIT_SUBMODULES_RECURSE TRUE
+  GIT_REPOSITORY https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+  GIT_TAG        V11.1.0
+#   GIT_SUBMODULES_RECURSE TRUE
+#   GIT_CONFIG --recurse-submodules -j8 https://github.com/FreeRTOS/FreeRTOS-Kernel.git
   GIT_PROGRESS TRUE
   SOURCE_DIR ${CMAKE_SOURCE_DIR}/${DEPENDENCIES_FOLDER}/freertos
 )
 
-FetchContent_MakeAvailable(freertos)
+# FetchContent_MakeAvailable(freertos)

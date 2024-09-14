@@ -16,8 +16,55 @@
             "serverArgs": [],
             "device": "STM32F407VE",
             "interface": "swd",
+            "showDevDebugOutput": "none",
             "serialNumber": "", //If you have more than one J-Link probe, add the serial number here.
-            "svdFile": "${workspaceRoot}/.vscode/${mcu}.svd",
+            "svdFile": "${workspaceRoot}/.vscode/${config:mcu}.svd",
+            "swoConfig":{
+                "enabled":true,
+                "source":"probe",
+                "swoFrequency": 2000000,
+                "cpuFrequency":72000000,
+                "decoders": [
+                    {
+                        "port": 0,
+                        "type": "console",
+                        "label": "SWO output",
+                        "encoding":"ascii"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "st-link",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/GPR-Kijitorakov.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "serverpath": "C:/Program Files/xpack-openocd-0.12.0-4/bin/openocd.exe",
+            "device": "STM32F407VE",
+            "interface": "swd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "svdFile": "${workspaceRoot}/.vscode/STM32F407.svd",
+            "showDevDebugOutput": "none",
+            "swoConfig":{
+                "enabled":true,
+                "source":"probe",
+                "swoFrequency": 2000000,
+                "cpuFrequency":72000000,
+                "decoders": [
+                    {
+                        "port": 0,
+                        "type": "console",
+                        "label": "SWO output",
+                        "encoding":"ascii"
+                    }
+                ]
+            }
         },
     ],
 }

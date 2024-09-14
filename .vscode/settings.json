@@ -1,5 +1,4 @@
 {
-    "mcu": "STM32F407",
 
     "workbench.colorCustomizations": {
       // "statusBar.background": "#d3e6f0",
@@ -129,9 +128,4 @@
     },
     "cortex-debug.variableUseNaturalFormat": false,
     "mesonbuild.configureOnOpen": false
-
-    // {
-    //     "cortex-debug.armToolchainPath": "C:\\Program Files (x86)\\Arm GNU Toolchain aarch64-none-elf\\12.2 rel1\\bin",
-    //     "cortex-debug.openocdPath": "openocd.exe"
-    // }
 }

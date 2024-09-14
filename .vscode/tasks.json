@@ -8,15 +8,15 @@
             "presentation": {
                 "clear": true
             },
-            "command": "./.vscode/build.ps1",
             "args": [
                 "-config",
                 "Release"
             ],
+            "command": "./.vscode/build.ps1",
             "options": {
                 "cwd": "${workspaceRoot}",
                 "statusbar": {
-                    "color" : "#1da628",
+                    "color" : "#72e77c",
                     "detail" : "Build sources and subprojects",
                     "label" : "$(layers) Release",
                     "hide" : false
@@ -30,15 +30,15 @@
             "presentation": {
                 "clear": true
             },
-            "command": "./.vscode/build.ps1",
             "args": [
                 "-config",
                 "Debug"
             ],
+            "command": "./.vscode/build.ps1",
             "options": {
                 "cwd": "${workspaceRoot}",
                 "statusbar": {
-                    "color" : "#1da628",
+                    "color" : "#72e77c",
                     "detail" : "Build sources and subprojects",
                     "label" : "$(layers) Debug",
                     "hide" : false
@@ -56,7 +56,7 @@
             "options": {
                 "cwd": "${workspaceRoot}/.vscode",
                 "statusbar": {
-                    "color" : "#1da628",
+                    "color" : "#72e77c",
                     "detail" : "Delete builded files and downloaded repo",
                     "label" : "$(trash) Delete",
                     "hide" : false
