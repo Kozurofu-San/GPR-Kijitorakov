@@ -4,7 +4,7 @@ Set-Location ..
 $folders = 'build', 'build-debug', 'build-release'
 foreach($f in $folders){
     if(Test-Path $f){
-        Write-Host 'Removed folder' $f
+        Write-Host 'Removed' $f '/'
         Remove-Item $f -Recurse -Force -Confirm:$false
     }
 }

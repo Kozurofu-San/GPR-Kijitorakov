@@ -6,8 +6,7 @@ if (-not(Test-Path -Path $build_folder)) {
 }
 $dir = Get-Location
 Set-Location $build_folder
-# Get-Location
-# Write-Host $dir
+# cmake -LAH
 cmake -G Ninja $dir
 cmake --build . --config $Config
 Set-Location $dir

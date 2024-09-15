@@ -40,7 +40,7 @@
 /******************************************************************************/
 
 #define configTICK_RATE_HZ                         ( 1000U )
-#define configUSE_PREEMPTION                       1
+#define configUSE_PREEMPTION                       0
 #define configUSE_TIME_SLICING                     1
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION    0
 #define configUSE_TICKLESS_IDLE                    1
