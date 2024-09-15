@@ -1,0 +1,40 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Kozurofu/YandexDisk/Android/Plot/app/src/main/res/drawable/button_round.xml" value="0.188" />
+        <entry key="..\:/Users/Kozurofu/YandexDisk/Android/Plot/app/src/main/res/drawable/ic_button_settings_foreground.xml" value="0.188" />
+        <entry key="..\:/Users/Kozurofu/YandexDisk/Android/Plot/app/src/main/res/layout-land/activity_main.xml" value="0.15211640211640212" />
+        <entry key="..\:/Users/Kozurofu/YandexDisk/Android/Plot/app/src/main/res/layout/activity_main.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/Kozurofu/YandexDisk/Android/Plot/app/src/main/res/layout/activity_settings.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/Kozurofu/YandexDisk/Android/Plot/app/src/main/res/layout/fragment_plot.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Kozurofu/YandexDisk/Android/Plot/app/src/main/res/menu/menu_settings.xml" value="0.1796875" />
+        <entry key="..\:/Users/Kozurofu/YandexDisk/Android/Plot/app/src/main/res/xml/preferences.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/Kozurofu/YandexDisk/Android/Plot/app/src/main/res/xml/preferences_plot.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Roman/YandexDisk/Android/Plot/app/src/main/res/layout-land/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Roman/YandexDisk/Android/Plot/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Roman/YandexDisk/Android/Plot/app/src/main/res/layout/activity_settings.xml" value="0.1503623188405797" />
+        <entry key="..\:/Users/Roman/YandexDisk/Android/Plot/app/src/main/res/layout/activity_waterfall.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Roman/YandexDisk/Android/Plot/app/src/main/res/layout/fragment_plot.xml" value="0.4" />
+        <entry key="..\:/Users/Roman/YandexDisk/Android/Plot/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Roman/YandexDisk/Android/Plot/app/src/main/res/xml/activity_settings.xml" value="0.2740036231884058" />
+        <entry key="..\:/Users/Roman/YandexDisk/Android/Plot/app/src/main/res/xml/preferences.xml" value="0.22" />
+        <entry key="..\:/Users/Roman/YandexDisk/Android/Plot/app/src/main/res/xml/settings.xml" value="0.1" />
+        <entry key="..\:/YandexDisk/Android/Plot/app/src/main/res/xml/preferences.xml" value="0.2753623188405797" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.10666666666666667" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

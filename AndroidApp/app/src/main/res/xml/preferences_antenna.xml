@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Antenna settings"/>
+    <ListPreference
+        android:icon="@drawable/ic_settings"
+        android:entries="@array/antenna_variants"
+        android:entryValues="@array/antenna_variants"
+        android:key="nAntennaTx"
+        android:title="Tx Antenna" />
+    <EditTextPreference
+        android:key="editMinLpdaTxWidth"
+        android:title="Min dipole width"
+        app:isPreferenceVisible="true"/>
+    <EditTextPreference
+        android:key="editMaxLpdaTxWidth"
+        android:title="Max dipole width"
+        app:isPreferenceVisible="true"/>
+    <EditTextPreference
+        android:key="editSpiralTxWidth"
+        android:title="Spiral diameter"
+        app:isPreferenceVisible="true"/>
+    <ListPreference
+        android:icon="@drawable/ic_settings"
+        android:entries="@array/antenna_variants"
+        android:entryValues="@array/antenna_variants"
+        android:key="nAntennaRx"
+        android:title="Rx Antenna" />
+    <EditTextPreference
+        android:key="editMinLpdaRxWidth"
+        android:title="Min dipole width"
+        app:isPreferenceVisible="true"/>
+    <EditTextPreference
+        android:key="editMaxLpdaRxWidth"
+        android:title="Max dipole width"
+        app:isPreferenceVisible="true"/>
+    <EditTextPreference
+        android:key="editSpiralRxWidth"
+        android:title="Spiral diameter"
+        app:isPreferenceVisible="true"/>
+    <Preference
+        android:key="prefAntennaInfo"
+        android:title="Info"
+        app:isPreferenceVisible="true"/>
+</PreferenceScreen>

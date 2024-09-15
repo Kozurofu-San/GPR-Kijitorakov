@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Grid"/>
+    <Preference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_grid"
+        android:key="prefGrid"
+        android:fragment="com.example.plot.graphics.GridSettings"
+        android:title="Grid settings"
+        app:fragment="com.example.plot.graphics.GridSettings">
+    </Preference>
+    <PreferenceCategory
+        android:title="Waterfall settings"/>
+    <ListPreference
+        android:summary="Colormap"
+        android:entries="@array/colormap_variants"
+        android:entryValues="@array/colormap_variants"
+        android:key="nColormap"
+        android:title="Color Palette"
+        android:dialogTitle="Colormap"
+        android:dialogIcon="@drawable/ic_color"/>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switchAutoscalingWaterfall"
+        android:title="Autoscaling"
+        android:icon="@drawable/ic_autoscale"
+        android:summary="Fit chart to margin values"
+        app:defaultValue="false"/>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switchHardwareInterpolation"
+        android:title="Hardware interpolation"
+        android:icon="@drawable/ic_alias"
+        android:summary="Performance will be decreased"/>
+
+
+</PreferenceScreen>

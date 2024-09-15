@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <PreferenceCategory
+        android:title="Hardware settings"/>
+    <Preference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_grid"
+        android:key="prefGrid"
+        android:fragment="com.example.plot.SettingsRadarFragment"
+        android:title="Radar settings">
+    </Preference>
+    <Preference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_grid"
+        android:key="prefGrid"
+        android:fragment="com.example.plot.SettingsAntennaFragment"
+        android:title="Antenna settings">
+    </Preference>
+    <Preference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_grid"
+        android:key="prefGrid"
+        android:fragment="com.example.plot.SettingsSelectFragment"
+        android:title="Tx Rx select">
+    </Preference>
+    <PreferenceCategory
+        android:title="DSP Settings"/>
+    <ListPreference
+        android:icon="@drawable/ic_settings"
+        android:entries="@array/fft_variants"
+        android:entryValues="@array/fft_variants"
+        android:key="nFft"
+        android:title="FFT points" />
+    <ListPreference
+        android:icon="@drawable/ic_settings"
+        android:entries="@array/windows_variants"
+        android:entryValues="@array/windows_variants"
+        android:key="nWindow"
+        android:title="Window" />
+    <ListPreference
+        android:icon="@drawable/ic_settings"
+        android:entries="@array/window_half_variants"
+        android:entryValues="@array/window_half_variants"
+        android:key="nWindowHalf"
+        android:title="Window part" />
+</PreferenceScreen>

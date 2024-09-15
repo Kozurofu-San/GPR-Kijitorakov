@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="parentScreen">
+    <PreferenceCategory
+        android:title="Grid Settings"
+        android:key="parentScreen"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_grid"
+        android:key="checkGridEnable"
+        android:title="Grid enable"
+        android:summary="Show Axis ang Grid"/>
+    <SwitchPreference
+        android:defaultValue="true"
+        android:icon="@drawable/ic_dash"
+        android:key="switchGridDash"
+        android:title="Dash Line"
+        android:summary="On - dash, off - solid"/>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switchAntiAliasing"
+        android:title="Anti Aliasing"
+        android:icon="@drawable/ic_alias"
+        android:summary="Smooth neighbor's values"/>
+    <EditTextPreference
+        android:key="editGridLineWidth"
+        android:icon="@drawable/ic_line_width"
+        android:title="Grid Line Width"
+        android:summary="1"
+        android:defaultValue="1"
+        android:dialogMessage="Enter the line width"
+        android:dialogIcon="@drawable/ic_line_width"
+        android:dialogTitle="Line"/>
+    <EditTextPreference
+        android:icon="@drawable/ic_color"
+        android:key="editGridColor"
+        android:title="Grid Color"
+        android:dialogTitle="Color"
+        android:dialogIcon="@drawable/ic_color"/>
+    <EditTextPreference
+        android:defaultValue=""
+        android:icon="@drawable/ic_label"
+        android:key="editLabelX"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="X axis label" />
+    <EditTextPreference
+        android:defaultValue=""
+        android:icon="@drawable/ic_label"
+        android:key="editLabelY"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Y axis label" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switchAutoscalingPlot"
+        android:title="Autoscaling"
+        android:summary="Fit charts in margins every draw refresh"
+        android:icon="@drawable/ic_autoscale"/>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="checkLogX"
+        android:title="Logarithmic scale on X axis"
+        android:summary="On - log10, off - linear"
+        android:icon="@drawable/ic_compress"/>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="checkLogY"
+        android:title="Logarithmic scale on Y axis"
+        android:summary="On - log10, off - linear"
+        android:icon="@drawable/ic_compress"/>
+    <PreferenceCategory/>
+</PreferenceScreen>

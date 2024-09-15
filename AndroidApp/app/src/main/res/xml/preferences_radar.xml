@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Radar settings"/>
+    <EditTextPreference
+        android:key="editFmin"
+        android:title="Start frequency"
+        android:icon="@drawable/ic_settings"
+        android:dialogMessage="Enter the start frequency in MHz"/>
+    <EditTextPreference
+        android:key="editFmax"
+        android:title="Stop frequency"
+        android:icon="@drawable/ic_settings"
+        android:dialogMessage="Enter the stop frequency in MHz"/>
+    <EditTextPreference
+        android:key="editFstep"
+        android:title="Step frequency"
+        android:icon="@drawable/ic_settings"
+        android:dialogMessage="Enter the step frequency in MHz"/>
+    <EditTextPreference
+        android:key="editTexp"
+        android:title="Exposition time"
+        android:icon="@drawable/ic_settings"
+        android:dialogMessage="Enter the exposition time in us"/>
+    <EditTextPreference
+        android:key="editPower"
+        android:title="Power"
+        android:icon="@drawable/ic_settings"
+        android:dialogMessage="Enter power"/>
+    <EditTextPreference
+        android:key="editPhase"
+        android:title="Phase"
+        android:icon="@drawable/ic_settings"
+        android:dialogMessage="Enter phase in rad"/>
+    <Preference
+        android:key="prefRadarInfo"
+        android:title="Info"/>
+</PreferenceScreen>

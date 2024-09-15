@@ -1,2 +1,2 @@
 # GPR-Kijitorakov
-Ground Penetrating Radar (GPR) made of cheapest modules from Aliexpress
+This is an old and obsolete version of GPR-Kijitorakov project

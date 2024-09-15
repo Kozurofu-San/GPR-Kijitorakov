@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">GPR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagebutton">ImageButton</string>
+    <string-array name="fft_variants">
+        <item>64</item>
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+        <item>2048</item>
+        <item>4096</item>
+    </string-array>
+    <string-array name="windows_variants">
+        <item>Rectangle</item>
+        <item>Blackmann-Harris</item>
+        <item>Kaiser</item>
+        <item>Flat top</item>
+        <item>Cosinus</item>
+        <item>Tukey</item>
+        <item>Hamming</item>
+        <item>Hanning</item>
+        <item>Gauss</item>
+        <item>Bartlett-Hann</item>
+        <item>Triangle</item>
+        <item>Hann-Poisson</item>
+    </string-array>
+    <string-array name="colormap_variants">
+        <item>HSV</item>
+        <item>Gray</item>
+        <item>Jet</item>
+        <item>Cool</item>
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Autumn</item>
+        <item>Winter</item>
+        <item>Hot</item>
+        <item>Copper</item>
+        <item>Bone</item>
+        <item>Pink</item>
+    </string-array>
+    <string-array name="window_half_variants">
+        <item>Full</item>
+        <item>Left Half</item>
+        <item>Right Half</item>
+    </string-array>
+    <string-array name="antenna_variants">
+        <item>Dipole</item>
+        <item>LPDA</item>
+        <item>Spiral</item>
+    </string-array>
+</resources>
